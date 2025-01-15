@@ -1,5 +1,6 @@
 
 import Image from 'next/image'
+import Link from 'next/link';
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 
@@ -26,7 +27,9 @@ const Allpagesmainsection: React.FC<LogoProps> = ({logo= "Shop", logoDescription
           {/* Logo  */}
         <p className="font-medium text-[48px] leading-[72px]">{logo}</p>
           <div className="flex items-center justify-center space-x-2">
+            <Link href="/">
             <p className="font-medium">Home</p>
+            </Link>
             <MdOutlineKeyboardArrowRight className="text-xl" />
 
             <p>{logoDescription}</p>

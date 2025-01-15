@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
     return (
       <>
@@ -12,13 +14,21 @@ const Footer = () => {
   
             {/* Links Section */}
             <div className="grid mb-8 md:mb-0">
-              <a className="text-[#9F9F9F] py-[10px] md:py-[20px] font-bold" href="">
+              <p className="text-[#9F9F9F] py-[10px] md:py-[20px] font-bold">
                 Links
-              </a>
-              <a className="py-[5px] md:py-[10px]" href="">Home</a>
-              <a className="py-[5px] md:py-[10px]" href="">Shop</a>
-              <a className="py-[5px] md:py-[10px]" href="">About</a>
-              <a className="py-[5px] md:py-[10px]" href="">Contact</a>
+              </p>
+              <Link href="/">
+              <p className="cursor-pointer py-[5px] md:py-[10px]" >Home</p>
+              </Link>
+              <Link href="/Shop">
+              <p className="cursor-pointer py-[5px] md:py-[10px]">Shop</p>
+              </Link>
+              <Link href="">
+              <p className="cursor-pointer py-[5px] md:py-[10px]" >About</p>
+              </Link>
+              <Link href="/Contact">
+              <p className="cursor-pointer py-[5px] md:py-[10px]" >Contact</p>
+              </Link>
             </div>
   
             {/* Help Section */}

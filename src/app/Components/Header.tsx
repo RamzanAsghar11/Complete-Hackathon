@@ -64,9 +64,14 @@ const Header = () => {
           <Link href="/Myaccount">
             <TbUserExclamation className="cursor-pointer" />
           </Link>
+
           <FiSearch className="cursor-pointer" />
+          <Link href="/Checkout">
           <IoMdHeartEmpty className="cursor-pointer" />
+          </Link>
+          <Link href="/Cart">
           <AiOutlineShoppingCart className="cursor-pointer" />
+          </Link>
         </div>
 
         {/* Hamburger Menu for Mobile */}
@@ -113,9 +118,15 @@ const Header = () => {
             <Link href="/Myaccount">
               <TbUserExclamation className="cursor-pointer" />
             </Link>
+           
             <FiSearch />
+            
+            <Link href="/Checkout">
             <IoMdHeartEmpty />
+            </Link>
+            <Link href="/Cart">
             <AiOutlineShoppingCart />
+            </Link>
           </div>
         </div>
       )}

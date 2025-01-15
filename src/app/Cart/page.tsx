@@ -26,7 +26,7 @@ const Cart = () => {
       <div className="my-6 py-8 w-full flex flex-col lg:flex-row px-4 md:px-6 2xl:px-24 gap-6">
         <table className="w-full xl:w-[70%]">
           <thead className="bg-[#FFF9E5]">
-            <tr className="grid grid-cols-6 items-center py-3 lg:text-xl">
+          <tr className="grid grid-cols-6 items-center py-3 text-xs md:text-xl">
               <th></th>
               <th>Product</th>
               <th>Price</th>
@@ -37,7 +37,7 @@ const Cart = () => {
           </thead>
           <tbody>
             {cart.map((item) => (
-              <tr key={item.id} className="grid grid-cols-6 items-center py-3">
+              <tr key={item.id} className="grid grid-cols-6 text-xs lg:text-xl items-center text-center py-3">
                 <td>
                   <Image
                     width={80}
@@ -53,7 +53,7 @@ const Cart = () => {
                   <input
                     type="number"
                     value={item.quantity}
-                    className="w-12 border text-center rounded"
+                    className="w-6 md:w-12 border text-center rounded"
                     onChange={(e) => {
                       const newQuantity = Math.max(parseInt(e.target.value || "1", 10), 1); 
                       updateCartQuantity(item.id, newQuantity);
